@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+# An Amazing Weather App.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+The Weather Application is a web-based tool that provides real-time weather information based on the user's geolocation. It fetches data from the OpenWeatherMap API and displays various weather metrics and modules.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Geolocation-based Weather**: Automatically fetches weather data based on the user's current location.
+- **Modular Design**: Supports multiple weather modules like current weather, sunrise/sunset times, wind conditions, etc.
+- **Unit Conversion**: Allows switching between Celsius and Fahrenheit units for temperature.
+- **Error Handling**: Displays appropriate error messages for failed API requests or geolocation errors.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: Frontend framework for building the user interface.
+- **Chakra UI**: Component library for styling and layout.
+- **OpenWeatherMap API**: Provides weather data including current weather, forecasts, and more.
+- **TypeScript**: Enhances code quality and development experience with static typing.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Installation
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone the repository:
+
+   ```
+   git clone <repository-url>
+   ```
+
+2. Install dependencies:
+
+   ```
+   npm install
+   ```
+
+3. Create a `.env` file in the root directory and add your OpenWeatherMap API key:
+
+   ```
+   VITE_OPEN_WEATHER_API_KEY=your-api-key
+   ```
+
+4. Start the development server:
+
+   ```
+   npm start
+   ```
+
+5. Open the application in your browser:
+
+   ```
+   http://localhost:3000
+   ```
+
+## Usage
+
+- Upon loading the application, it will request geolocation access. Allow the browser to share your location to fetch accurate weather data.
+- Weather modules such as current weather, sunrise/sunset times, wind conditions, etc., will be displayed once data is fetched successfully.
+- Use the toggle switch to change temperature units between Celsius and Fahrenheit.
