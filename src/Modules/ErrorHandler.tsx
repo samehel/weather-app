@@ -15,7 +15,7 @@ function ErrorHandler({ type }: ErrorHandlerProps) {
       imageSrc = 'sad-sun.png'; 
       break;
     case 2:
-      errorMessage = 'I need permission to access your location';
+      errorMessage = 'Enable location access to view data';
       imageSrc = 'location-off.png';
       break;
     case 3:

@@ -1,4 +1,4 @@
-import { Text, Flex, Image } from "@chakra-ui/react";
+import { Text, Flex } from "@chakra-ui/react";
 import theme from "../assets/theme";
 
 interface WeatherProps {
