@@ -23,7 +23,7 @@ The Weather Application is a web-based tool that provides real-time weather info
 1. Clone the repository:
 
    ```
-   git clone https://github.com/samehel/weather-app
+   git clone https://github.com/samehel/weather-app.git
    ```
 
 2. Install dependencies:
